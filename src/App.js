@@ -1,26 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
+import firebase from 'firebase/app';
+import 'firebase/auth';
 import logo from './logo.svg';
 import './App.css';
+var config = {
+  apiKey: "AIzaSyC1-jnG-RsGVarlgkoKc9CxHt8mjRYa9CQ",
+  authDomain: "labofind-250009.firebaseapp.com",
+  // databaseURL: "YOUR_DATABASE_URL",
+  projectId: "labofind-250009",
+  storageBucket: "labofind-250009.appspot.com"
+}
+firebase.initializeApp(config);
+class App extends Component {
 
-function App() {
-  return (
+  constructor(props) {
+    super(props);
+  }
+  render() {
+     return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      LaboFind <br/>
+      Coming Soon
+
     </div>
   );
+  }
+
 }
 
 export default App;
