@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import firebase from 'firebase/app';
+
+import firebase from 'firebase';
 import 'firebase/auth';
 import logo from './logo.svg';
 import './App.css';
+import LandingPage from "./components/LandingPage.js";
 var config = {
   apiKey: "AIzaSyC1-jnG-RsGVarlgkoKc9CxHt8mjRYa9CQ",
   authDomain: "labofind-250009.firebaseapp.com",
@@ -11,7 +13,7 @@ var config = {
   storageBucket: "labofind-250009.appspot.com"
 }
 firebase.initializeApp(config);
-class App extends Component {
+class App extends React.Component {
 
   constructor(props) {
     super(props);
@@ -21,7 +23,7 @@ class App extends Component {
     <div className="App">
       LaboFind <br/>
       Coming Soon
-
+{LandingPage}
     </div>
   );
   }

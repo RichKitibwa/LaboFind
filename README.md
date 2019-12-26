@@ -7,6 +7,6 @@ run:
 
 ## Deploying
 run:
-`npm build` to compile the project for firebase
+`npm run build` to compile the project for firebase
 
 `firebase deploy`
