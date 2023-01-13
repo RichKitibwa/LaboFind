@@ -1,5 +1,5 @@
 ## LaboFind
-A porject for finding the lab nearest to you
+A project for finding the lab nearest to you
 
 ## Running locally
 run:
